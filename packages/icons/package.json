@@ -6,6 +6,7 @@
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
+    "precompile": "rm -rf lib",
     "compile": "tsc --build"
   }
 }

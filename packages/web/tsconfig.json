@@ -2,7 +2,9 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "lib",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "declarationDir": "types",
+    "emitDeclarationOnly": true
   },
-  "exclude": ["**/*.spec.ts", "**/*.d.ts"]
+  "exclude": ["**/*.spec.tsx", "**/*.d.ts"]
 }

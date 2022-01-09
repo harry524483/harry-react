@@ -4,9 +4,16 @@
   "description": "React component library",
   "author": "harry524483 <astroharinder.singh@gmail.com>",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": "https://github.com/harry524483/harry-react.git",
   "scripts": {
-    "compile": "tsc --build",
+    "prebuild": "rm -rf lib",
+    "build": "rollup -c",
     "test": "jest",
     "test:watch": "jest --watch"
   },

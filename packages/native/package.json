@@ -6,7 +6,8 @@
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "tsc --build",
+    "prebuild": "rm -rf lib",
+    "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch"
   },
