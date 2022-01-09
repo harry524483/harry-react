@@ -1,0 +1,11 @@
+{
+  "name": "@harry-react/icons",
+  "version": "1.0.0",
+  "description": "Icons for native and web",
+  "author": "harry524483 <astroharinder.singh@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "tsc --build"
+  }
+}
