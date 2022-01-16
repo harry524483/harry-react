@@ -5,7 +5,7 @@ import { terser } from 'rollup-plugin-terser';
 import external from 'rollup-plugin-peer-deps-external';
 import del from 'rollup-plugin-delete';
 import dts from 'rollup-plugin-dts';
-// import postcss from 'rollup-plugin-postcss';
+import postcss from 'rollup-plugin-postcss';
 
 const packageJson = require('./package.json');
 
@@ -21,13 +21,15 @@ export default [
       resolve(),
       commonjs(),
       typescript({ tsconfig: './tsconfig.json' }),
-      // postcss(),
+      postcss(),
       terser(),
     ],
+    external: ['react', 'react-dom'],
   },
   {
-    input: 'lib/esm/types/index.d.ts',
-    output: [{ file: 'lib/index.d.ts', format: 'esm' }],
-    plugins: [dts(), del({ hook: 'buildEnd', targets: 'lib/**/types' })],
+    input: 'build/esm/types/index.d.ts',
+    output: [{ file: 'build/index.d.ts', format: 'esm' }],
+    plugins: [dts(), del({ hook: 'buildEnd', targets: 'build/**/types' })],
+    external: [/\.scss$/],
   },
 ];

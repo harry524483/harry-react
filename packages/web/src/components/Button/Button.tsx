@@ -1,5 +1,5 @@
 import { FC } from 'react';
-// import './Button.scss';
+import './Button.scss';
 
 import { ButtonProps } from './Button.types';
 

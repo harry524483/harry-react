@@ -4,11 +4,11 @@
   "description": "React component library",
   "author": "harry524483 <astroharinder.singh@gmail.com>",
   "license": "MIT",
-  "main": "lib/cjs/index.js",
-  "module": "lib/esm/index.js",
-  "types": "lib/index.d.ts",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
+  "types": "build/index.d.ts",
   "files": [
-    "lib"
+    "build"
   ],
   "repository": "https://github.com/harry524483/harry-react.git",
   "publishConfig": {
@@ -16,7 +16,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "prebuild": "rm -rf lib",
+    "prebuild": "rm -rf build",
     "build": "rollup -c",
     "test": "jest",
     "test:watch": "jest --watch"
