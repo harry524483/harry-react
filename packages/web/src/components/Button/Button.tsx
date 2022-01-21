@@ -3,9 +3,9 @@ import './Button.scss';
 
 import { ButtonProps } from './Button.types';
 
-const Button: FC<ButtonProps> = ({ children, ...remainingProps }) => {
+const Button: FC<ButtonProps> = ({ children, color = 'primary', ...rest }) => {
   return (
-    <button {...remainingProps} className="btn">
+    <button {...rest} className={`btn btn--${color}`}>
       {children}
     </button>
   );
