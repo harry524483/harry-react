@@ -5,11 +5,20 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@babel/core": "^7.16.10",
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-actions": "^6.4.13",
+    "@storybook/addon-essentials": "^6.4.13",
+    "@storybook/addon-links": "^6.4.13",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.4.13",
+    "@storybook/manager-webpack5": "^6.4.13",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.4.13",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/jest-native": "^4.0.4",
     "@testing-library/react": "^12.1.2",
@@ -20,6 +29,7 @@
     "@types/react-native": "^0.66.11",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
+    "babel-loader": "^8.2.3",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.6.0",
@@ -43,6 +53,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
+    "sass-loader": "^12.4.0",
     "ts-jest": "^27.1.2",
     "typescript": "^4.5.4"
   },
@@ -55,7 +66,9 @@
     "test": "lerna run test",
     "build": "lerna run build",
     "test:watch": "lerna run test:watch",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook:web": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "config": {
     "commitizen": {
