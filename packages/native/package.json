@@ -9,6 +9,7 @@
   "react-native": "src/index.ts",
   "types": "build/esm/index.d.ts",
   "files": [
+    "src",
     "build"
   ],
   "repository": "https://github.com/harry524483/harry-react.git",
