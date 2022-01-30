@@ -1,13 +1,14 @@
 import { View } from 'react-native';
-import Button, { ButtonProps } from './Button';
-import { Color } from './Button.style';
+import { Story, Meta } from '@storybook/react';
+import Button, { Color } from './Button';
+import { ButtonProps } from './Button.types';
 
 export default {
   title: 'ReactNative/Button',
   component: Button,
-};
+} as Meta;
 
-const Template = (props: ButtonProps) => (
+const Template: Story<ButtonProps> = (props) => (
   <View>
     <Button {...props} />
   </View>

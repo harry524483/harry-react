@@ -5,10 +5,10 @@ import Button from './Button';
 describe('Button', () => {
   it('renders successfully', () => {
     // Arrange
-    const title = 'foo';
+    const text = 'foo';
 
     // Act
-    const { getByRole } = render(<Button title={title} />);
+    const { getByRole } = render(<Button text={text} />);
 
     // Assert
     expect(getByRole('button')).toBeTruthy();

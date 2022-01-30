@@ -1,12 +1,12 @@
-import Button from './Button';
-import { ButtonProps, Color } from './Button';
+import { Button, ButtonProps, Color } from '@harry-react/web';
+import { Story, Meta } from '@storybook/react';
 
 export default {
   title: 'React/Button',
   component: Button,
-};
+} as Meta;
 
-const Template = ({ children, ...rest }: ButtonProps) => (
+const Template: Story<ButtonProps> = ({ children, ...rest }) => (
   <Button {...rest}>{children}</Button>
 );
 

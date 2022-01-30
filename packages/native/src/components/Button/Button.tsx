@@ -1,16 +1,13 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  TouchableOpacityProps,
-} from 'react-native';
-import buttonStyle, { Color } from './Button.style';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import buttonStyle from './Button.style';
+import { ButtonProps } from './Button.types';
 
-export type ButtonProps = TouchableOpacityProps & {
-  text: string;
-  color?: string;
-};
+export enum Color {
+  primary = 'primary',
+  secondary = 'secondary',
+  tertiary = 'tertiary',
+}
 
 const Button = ({
   text,

@@ -1,5 +1,6 @@
-import { FC, ButtonHTMLAttributes } from 'react';
+import { FC } from 'react';
 import './Button.scss';
+import { ButtonProps } from './Button.types';
 
 export enum Color {
   primary = 'primary',
@@ -7,11 +8,11 @@ export enum Color {
   tertiary = 'tertiary',
 }
 
-export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  color: Color;
-};
-
-const Button: FC<ButtonProps> = ({ children, color = 'primary', ...rest }) => {
+const Button: FC<ButtonProps> = ({
+  children,
+  color = Color.primary,
+  ...rest
+}) => {
   return (
     <button {...rest} className={`btn btn--${color}`}>
       {children}

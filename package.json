@@ -2,7 +2,8 @@
   "name": "harry-react",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "stories/*"
   ],
   "devDependencies": {
     "@babel/core": "^7.16.10",
