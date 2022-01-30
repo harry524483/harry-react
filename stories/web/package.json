@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@harry-stories/web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React storybook",
   "author": "harry524483 <astroharinder.singh@gmail.com>",
   "homepage": "https://github.com/harry524483/harry-react#readme",
@@ -13,6 +13,6 @@
     "url": "https://github.com/harry524483/harry-react/issues"
   },
   "dependencies": {
-    "@harry-react/web": "^1.1.7"
+    "@harry-react/web": "^1.1.8"
   }
 }
