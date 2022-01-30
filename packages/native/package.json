@@ -1,14 +1,21 @@
 {
   "name": "@harry-react/native",
   "version": "1.1.2",
-  "private": true,
   "description": "React Native component library",
   "author": "harry524483 <astroharinder.singh@gmail.com>",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
+  "react-native": "src/index.ts",
+  "types": "build/esm/index.d.ts",
+  "files": [
+    "build"
+  ],
   "scripts": {
-    "prebuild": "rm -rf lib",
-    "build": "tsc",
+    "prebuild": "rm -rf build",
+    "build:esm": "tsc --outDir build/esm",
+    "build:cjs": "tsc --module commonjs --outDir build/cjs",
+    "build": "yarn build:esm && yarn build:cjs",
     "test": "jest",
     "test:watch": "jest --watch"
   },

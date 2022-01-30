@@ -1,5 +1,5 @@
 import Button from './Button';
-import { ButtonProps, Color } from './Button.types';
+import { ButtonProps, Color } from './Button';
 
 export default {
   title: 'React/Button',

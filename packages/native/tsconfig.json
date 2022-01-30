@@ -1,8 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "lib",
     "jsx": "react-native"
   },
-  "exclude": ["**/*.spec.tsx", "**/*.d.ts"]
+  "exclude": ["**/*.spec.tsx", "**/*.d.ts", "**/*.stories.tsx", "build"]
 }
