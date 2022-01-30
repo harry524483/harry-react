@@ -1,31 +1,55 @@
-import { StyleSheet, ViewStyle, TextStyle, ImageStyle } from 'react-native';
+import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
-export const colorPrimary = '#55c57a';
+const colorPrimary = '#55c57a';
 const colorSecondary = '#ffb900';
 const colorTertiary = '#2998ff';
+const white = '#fff';
+const black = '#000';
 
-type ButtonStyle = {
-  button: ViewStyle | TextStyle;
-  buttonText: TextStyle;
-  buttonContainer: ViewStyle;
+export const Color = {
+  primary: 'primary',
+  secondary: 'secondary',
+  tertiary: 'tertiary',
 };
 
-const buttonStyle: StyleSheet.NamedStyles<ButtonStyle> = {
+export type ButtonStyle = {
+  button: ViewStyle | TextStyle;
+  buttonText: TextStyle;
+};
+
+type ButtonVarient = { [key: string]: ButtonStyle };
+
+export const buttonVarient: ButtonVarient = {
+  [Color.primary]: {
+    button: { backgroundColor: colorPrimary },
+    buttonText: {
+      color: white,
+    },
+  },
+  [Color.secondary]: {
+    button: { backgroundColor: colorSecondary },
+    buttonText: { color: black },
+  },
+  [Color.tertiary]: {
+    button: { backgroundColor: colorTertiary },
+    buttonText: { color: white },
+  },
+};
+
+const buttonStyle = (color: string): StyleSheet.NamedStyles<ButtonStyle> => ({
   button: {
     paddingVertical: 16,
     paddingHorizontal: 16 * 3,
     borderRadius: 16 * 10,
     alignSelf: 'flex-start',
     flexGrow: 0,
+    ...buttonVarient[color].button,
   },
   buttonText: {
-    color: 'white',
     textTransform: 'uppercase',
+    textAlign: 'center',
+    ...buttonVarient[color].buttonText,
   },
-  buttonContainer: {
-    alignItems: 'flex-start',
-    flex: 1,
-  },
-};
+});
 
 export default buttonStyle;

@@ -1,28 +1,35 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import buttonStyle from './Button.style';
+import {
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  TouchableOpacityProps,
+} from 'react-native';
+import buttonStyle, { Color } from './Button.style';
 
-export type ButtonProps = {
-  onPress: () => void;
+export type ButtonProps = TouchableOpacityProps & {
   text: string;
   color?: string;
-  textColor?: string;
 };
 
-const styles = StyleSheet.create(buttonStyle);
+const Button = ({
+  text,
+  onPress,
+  color = Color.primary,
+  ...rest
+}: ButtonProps) => {
+  const styles = StyleSheet.create(buttonStyle(color));
 
-const Button = ({ text, onPress, color, textColor }: ButtonProps) => (
-  <View style={styles.buttonContainer}>
+  return (
     <TouchableOpacity
-      style={[styles.button, !!color && { backgroundColor: color }]}
+      style={styles.button}
       onPress={onPress}
       activeOpacity={0.8}
+      {...rest}
     >
-      <Text style={[styles.buttonText, !!textColor && { color: textColor }]}>
-        {text}
-      </Text>
+      <Text style={styles.buttonText}>{text}</Text>
     </TouchableOpacity>
-  </View>
-);
+  );
+};
 
 export default Button;
