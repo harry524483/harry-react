@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/harry524483/harry-react/compare/@harry-react/native@1.1.4...@harry-react/native@1.1.5) (2022-01-30)
+
+
+### Bug Fixes
+
+* include src in npm package ([66b1cc9](https://github.com/harry524483/harry-react/commit/66b1cc969c4dd49f06896b3e5ba04048601ed6b2))
+
+
+
+
+
 ## [1.1.4](https://github.com/harry524483/harry-react/compare/@harry-react/native@1.1.3...@harry-react/native@1.1.4) (2022-01-30)
 
 
