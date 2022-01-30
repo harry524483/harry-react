@@ -11,6 +11,11 @@
   "files": [
     "build"
   ],
+  "repository": "https://github.com/harry524483/harry-react.git",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "prebuild": "rm -rf build",
     "build:esm": "tsc --outDir build/esm",
