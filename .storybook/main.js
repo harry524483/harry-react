@@ -9,6 +9,7 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/preset-scss',
     '@storybook/addon-react-native-web',
+    './snack-addon/register.js',
   ],
   framework: '@storybook/react',
   core: {
