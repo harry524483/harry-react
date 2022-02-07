@@ -1,7 +1,6 @@
 import { View } from 'react-native';
 import { Story, Meta } from '@storybook/react';
-import Button, { Color } from './Button';
-import { ButtonProps } from './Button.types';
+import { Button, Color, ButtonProps } from '@harry-react/native';
 
 export default {
   title: 'ReactNative/Button',
