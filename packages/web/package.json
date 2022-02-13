@@ -21,6 +21,9 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
+  "dependencies": {
+    "@harry-react/design-tokens": "^1.0.0"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"

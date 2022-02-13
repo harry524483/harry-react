@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "@harry-react/design-tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for web and native",
+  "author": "harry524483 <astroharinder.singh@gmail.com>",
+  "homepage": "https://github.com/harry524483/harry-react#readme",
+  "license": "ISC",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "style"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harry524483/harry-react.git"
+  },
+  "scripts": {
+    "prebuild": "rm -rf style build",
+    "build": "style-dictionary build && yarn createIndexFile && yarn compile",
+    "createIndexFile": "npx ts-node scripts/createIndexFile.ts",
+    "compile": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/harry524483/harry-react/issues"
+  },
+  "dependencies": {
+    "style-dictionary": "^3.1.1"
+  }
+}

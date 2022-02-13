@@ -1,0 +1,16 @@
+{
+  "button": {
+    "primary": {
+      "background-color": { "value": "{color.primary.value}" },
+      "color": { "value": "{color.base.white.value}" }
+    },
+    "secondary": {
+      "background-color": { "value": "{color.secondary.value}" },
+      "color": { "value": "{color.base.black.value}" }
+    },
+    "tertiary": {
+      "background-color": { "value": "{color.tertiary.value}" },
+      "color": { "value": "{color.base.white.value}" }
+    }
+  }
+}

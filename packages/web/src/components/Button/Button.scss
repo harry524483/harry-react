@@ -1,9 +1,4 @@
-$color-primary: #55c57a;
-$color-secondary: #ffb900;
-$color-tertiary: #2998ff;
-
-$color-white: #fff;
-$color-black: #000;
+@import '~@harry-react/design-tokens/style/main';
 
 .btn {
   &,
@@ -22,13 +17,13 @@ $color-black: #000;
 
   &:hover {
     transform: translateY(-0.1rem);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    box-shadow: 0 1rem 2rem rgba($button-secondary-color, 0.2);
   }
 
   &:active {
     outline: none;
     transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba($button-secondary-color, 0.2);
   }
 
   &::after {
@@ -45,29 +40,29 @@ $color-black: #000;
   }
 
   &--primary {
-    background-color: $color-primary;
-    color: $color-white;
+    background-color: $button-primary-background-color;
+    color: $button-primary-color;
 
     &::after {
-      background-color: $color-primary;
+      background-color: $button-primary-background-color;
     }
   }
 
   &--secondary {
-    background-color: $color-secondary;
-    color: $color-black;
+    background-color: $button-secondary-background-color;
+    color: $button-secondary-color;
 
     &::after {
-      background-color: $color-secondary;
+      background-color: $button-secondary-background-color;
     }
   }
 
   &--tertiary {
-    background-color: $color-tertiary;
-    color: $color-white;
+    background-color: $button-tertiary-background-color;
+    color: $button-primary-color;
 
     &::after {
-      background-color: $color-tertiary;
+      background-color: $button-tertiary-background-color;
     }
   }
 }
