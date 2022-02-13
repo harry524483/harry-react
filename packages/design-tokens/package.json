@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@harry-react/design-tokens",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Design tokens for web and native",
   "author": "harry524483 <astroharinder.singh@gmail.com>",
   "homepage": "https://github.com/harry524483/harry-react#readme",
