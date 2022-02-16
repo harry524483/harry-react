@@ -44,6 +44,7 @@
     "lerna": "^4.0.0",
     "lint-staged": "^12.1.7",
     "metro-react-native-babel-preset": "^0.66.2",
+    "@react-native-community/bob": "^0.17.1",
     "node-sass": "^7.0.1",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
