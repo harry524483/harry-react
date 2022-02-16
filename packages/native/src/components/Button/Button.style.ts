@@ -1,27 +1,31 @@
 import { StyleSheet } from 'react-native';
+import { button } from '@harry-react/design-tokens';
 import { Color } from './Button';
 import { ButtonStyle, ButtonVarient } from './Button.types';
 
-const colorPrimary = '#55c57a';
-const colorSecondary = '#ffb900';
-const colorTertiary = '#2998ff';
-const white = '#fff';
-const black = '#000';
+const {
+  ButtonPrimaryBackgroundColor,
+  ButtonPrimaryColor,
+  ButtonSecondaryBackgroundColor,
+  ButtonSecondaryColor,
+  ButtonTertiaryBackgroundColor,
+  ButtonTertiaryColor,
+} = button;
 
 export const buttonVarient: ButtonVarient = {
   primary: {
-    button: { backgroundColor: colorPrimary },
+    button: { backgroundColor: ButtonPrimaryBackgroundColor },
     buttonText: {
-      color: white,
+      color: ButtonPrimaryColor,
     },
   },
   secondary: {
-    button: { backgroundColor: colorSecondary },
-    buttonText: { color: black },
+    button: { backgroundColor: ButtonSecondaryBackgroundColor },
+    buttonText: { color: ButtonSecondaryColor },
   },
   tertiary: {
-    button: { backgroundColor: colorTertiary },
-    buttonText: { color: white },
+    button: { backgroundColor: ButtonTertiaryBackgroundColor },
+    buttonText: { color: ButtonTertiaryColor },
   },
 };
 
