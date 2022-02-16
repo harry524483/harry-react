@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/harry524483/harry-react/compare/@harry-react/native@1.2.0...@harry-react/native@1.3.0) (2022-02-16)
+
+
+### Features
+
+* integrate design tokens with native project ([876fc4d](https://github.com/harry524483/harry-react/commit/876fc4d5f97a697d90032040f4f6169326f1a5fa))
+
+
+
+
+
 # [1.2.0](https://github.com/harry524483/harry-react/compare/@harry-react/native@1.1.7...@harry-react/native@1.2.0) (2022-02-07)
 
 
