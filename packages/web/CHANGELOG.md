@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/harry524483/harry-react/compare/@harry-react/web@1.2.0...@harry-react/web@1.2.1) (2022-02-16)
+
+
+### Bug Fixes
+
+* token dependency error ([d4b855f](https://github.com/harry524483/harry-react/commit/d4b855fa428ab861450b4879f5ae93259127569d))
+
+
+
+
+
 # [1.2.0](https://github.com/harry524483/harry-react/compare/@harry-react/web@1.1.8...@harry-react/web@1.2.0) (2022-02-13)
 
 
