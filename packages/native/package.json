@@ -4,13 +4,13 @@
   "description": "React Native component library",
   "author": "harry524483 <astroharinder.singh@gmail.com>",
   "license": "MIT",
-  "main": "lib/commonjs/index.js",
-  "module": "lib/module/index.js",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
   "react-native": "src/index.ts",
-  "types": "lib/typescript/index.d.ts",
+  "types": "build/esm/index.d.ts",
   "files": [
     "src",
-    "lib"
+    "build"
   ],
   "repository": "https://github.com/harry524483/harry-react.git",
   "publishConfig": {
@@ -23,25 +23,13 @@
     "build:cjs": "tsc --module commonjs --outDir build/cjs",
     "build": "yarn build:esm && yarn build:cjs",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "prepare": "bob build"
+    "test:watch": "jest --watch"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-native": ">=0.63.0"
   },
-  "@react-native-community/bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      "commonjs",
-      "module",
-      [
-        "typescript",
-        {
-          "tsc": "../../node_modules/.bin/tsc"
-        }
-      ]
-    ]
+  "dependencies": {
+    "@harry-react/design-tokens": "^1.1.0"
   }
 }
