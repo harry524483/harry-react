@@ -1,6 +1,6 @@
 {
   "name": "@harry-react/native",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "React Native component library",
   "author": "harry524483 <astroharinder.singh@gmail.com>",
   "license": "MIT",
@@ -30,6 +30,6 @@
     "react-native": ">=0.63.0"
   },
   "dependencies": {
-    "@harry-react/design-tokens": "^1.1.1"
+    "@harry-react/design-tokens": "^1.1.2"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@harry-react/web",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "React component library",
   "author": "harry524483 <astroharinder.singh@gmail.com>",
   "license": "MIT",
@@ -26,6 +26,6 @@
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "@harry-react/design-tokens": "^1.1.1"
+    "@harry-react/design-tokens": "^1.1.2"
   }
 }
