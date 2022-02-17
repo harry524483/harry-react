@@ -8,9 +8,9 @@ describe('Button', () => {
     const text = 'foo';
 
     // Act
-    const { getByRole } = render(<Button text={text} />);
+    const { getByText } = render(<Button text={text} />);
 
     // Assert
-    expect(getByRole('button')).toBeTruthy();
+    expect(getByText(/foo/i)).toBeTruthy();
   });
 });

@@ -6,9 +6,6 @@
   "author": "harry524483 <astroharinder.singh@gmail.com>",
   "homepage": "https://github.com/harry524483/harry-react#readme",
   "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "bugs": {
     "url": "https://github.com/harry524483/harry-react/issues"
   },

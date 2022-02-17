@@ -20,8 +20,8 @@
   },
   "scripts": {
     "prebuild": "rm -rf style build",
-    "build": "style-dictionary build && yarn createIndexFile && yarn compile",
-    "createIndexFile": "npx ts-node scripts/createIndexFile.ts",
+    "build": "style-dictionary build && yarn createIndexFiles && yarn compile",
+    "createIndexFiles": "npx ts-node scripts/createIndexFiles.ts",
     "compile": "tsc"
   },
   "bugs": {
