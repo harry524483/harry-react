@@ -34,7 +34,6 @@ const buttonStyle = (color: Color): StyleSheet.NamedStyles<ButtonStyle> => ({
     paddingVertical: 16,
     paddingHorizontal: 16 * 3,
     borderRadius: 16 * 10,
-    alignSelf: 'flex-start',
     flexGrow: 0,
     ...buttonVarient[color].button,
   },
