@@ -1,11 +1,17 @@
 {
   "color": {
     "base": {
+      "green": {
+        "100": { "value": "#55c57a" }
+      },
+      "yellow": {
+        "100": { "value": "#ffb900" }
+      },
+      "blue": {
+        "100": { "value": "#2998ff" }
+      },
       "black": { "value": "#000000" },
       "white": { "value": "#ffffff" }
-    },
-    "primary": { "value": "{color.brand.primary.value}" },
-    "secondary": { "value": "{color.brand.secondary.value}" },
-    "tertiary": { "value": "{color.brand.tertiary.value}" }
+    }
   }
 }

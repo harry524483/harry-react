@@ -1,0 +1,22 @@
+{
+  "button": {
+    "font-family": { "value": "{font-family.mono.value}" },
+    "font-size": { "value": "{size.font.2.value}" },
+    "padding-vertical": { "value": "{spacing.3.value}" },
+    "padding-horizontal": { "value": "{spacing.4.value}" },
+    "border-radius": { "value": "{size.border.radius.lg.value}" },
+
+    "primary": {
+      "background-color": { "value": "{color.base.green.100.value}" },
+      "color": { "value": "{color.base.white.value}" }
+    },
+    "secondary": {
+      "background-color": { "value": "{color.base.yellow.100.value}" },
+      "color": { "value": "{color.base.white.value}" }
+    },
+    "tertiary": {
+      "background-color": { "value": "{color.base.blue.100.value}" },
+      "color": { "value": "{color.base.white.value}" }
+    }
+  }
+}

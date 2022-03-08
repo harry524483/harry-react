@@ -1,0 +1,7 @@
+{
+  "color": {
+    "primary": { "value": "{color.base.green.100.value}" },
+    "secondary": { "value": "{color.base.yellow.100.value}" },
+    "tertiary": { "value": "{color.base.blue.100.value}" }
+  }
+}

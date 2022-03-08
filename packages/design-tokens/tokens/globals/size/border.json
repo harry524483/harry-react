@@ -1,0 +1,18 @@
+{
+  "size": {
+    "border": {
+      "width": {
+        "sm": { "value": 1 },
+        "md": { "value": 2 },
+        "lg": { "value": 4 }
+      },
+
+      "radius": {
+        "sm": { "value": 4 },
+        "md": { "value": 16 },
+        "lg": { "value": 48 },
+        "xlg": { "value": 9999 }
+      }
+    }
+  }
+}
