@@ -1,6 +1,6 @@
 const StyleDictionary = require('style-dictionary');
 
-const brands = ['healthforce'];
+const brands = ['healthforce', 'yourlife'];
 
 const getBasePxFontSize = (options) => {
   return (options && options.basePxFontSize) || 16;
