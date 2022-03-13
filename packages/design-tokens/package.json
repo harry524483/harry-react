@@ -23,7 +23,7 @@
     "build": "style-dictionary build && yarn createIndexFiles && yarn compile",
     "createIndexFiles": "npx ts-node scripts/createIndexFiles.ts",
     "compile": "tsc",
-    "prebuild-tokens": "rm -rf dist",
+    "prebuild-tokens": "rm -rf build style",
     "build-tokens": "node build.js"
   },
   "bugs": {

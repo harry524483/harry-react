@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { button } from '@harry-react/design-tokens';
+import { healthforce } from '@harry-react/design-tokens';
 import { Color } from './Button';
 import { ButtonStyle, ButtonVarient } from './Button.types';
 
@@ -10,7 +10,7 @@ const {
   ButtonSecondaryColor,
   ButtonTertiaryBackgroundColor,
   ButtonTertiaryColor,
-} = button;
+} = healthforce;
 
 export const buttonVarient: ButtonVarient = {
   primary: {

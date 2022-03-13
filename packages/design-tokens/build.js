@@ -38,7 +38,7 @@ const getStyleDictionaryConfig = (brand) => ({
   platforms: {
     native: {
       transforms: ['attribute/cti', 'name/cti/pascal', 'color/rgb'],
-      buildPath: `dist/${brand}/`,
+      buildPath: `build/${brand}/`,
       files: [
         {
           destination: `index.js`,
@@ -70,36 +70,10 @@ const getStyleDictionaryConfig = (brand) => ({
   },
 });
 
-const getTokenTypesConfig = (brand) => ({
-  source: [
-    'tokens/globals/**/*.json',
-    'tokens/components/*.json',
-    `tokens/brands/${brand}/*.json`,
-  ],
-  platforms: {
-    types: {
-      transforms: ['attribute/cti', 'name/cti/pascal'],
-      buildPath: 'build/',
-      files: [
-        {
-          format: 'typescript/es6-declarations',
-          destination: `${brand}.d.ts`,
-        },
-      ],
-    },
-  },
-});
-
-const buildTokens = () => {
+const build = () => {
   brands.map((brand) => {
     StyleDictionary.extend(getStyleDictionaryConfig(brand)).buildAllPlatforms();
   });
 };
 
-const buildTypes = () => {
-  brands.map((brand) => {
-    StyleDictionary.extend(getTokenTypesConfig(brand)).buildAllPlatforms();
-  });
-};
-
-buildTokens();
+build();

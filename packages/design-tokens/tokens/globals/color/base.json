@@ -2,13 +2,18 @@
   "color": {
     "base": {
       "green": {
-        "100": { "value": "#55c57a" }
+        "100": { "value": "#55c57a" },
+        "200": { "value": "#28E9C6" }
       },
       "yellow": {
         "100": { "value": "#ffb900" }
       },
       "blue": {
-        "100": { "value": "#2998ff" }
+        "100": { "value": "#2998ff" },
+        "200": { "value": "#002858" }
+      },
+      "grey": {
+        "100": { "value": "#C1C7D0" }
       },
       "black": { "value": "#000000" },
       "white": { "value": "#ffffff" }

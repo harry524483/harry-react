@@ -1,0 +1,21 @@
+{
+  "radio": {
+    "height": { "value": "{spacing.6.value}" },
+    "width": { "value": "{spacing.6.value}" },
+    "border-width": { "value": "{size.border.width.md.value}" },
+    "border-color": { "value": "{color.base.blue.200.value}" },
+
+    "disabled": {
+      "border-color": { "value": "{color.base.grey.100.value}" }
+    },
+
+    "selected": {
+      "height": { "value": "{spacing.4.value}" },
+      "width": { "value": "{spacing.4.value}" },
+      "background-color": { "value": "{color.base.green.200.value}" },
+      "disabled": {
+        "background-color": { "value": "{color.base.grey.100.value}" }
+      }
+    }
+  }
+}
